@@ -1,0 +1,59 @@
+#h1{
+  background-color: #99d6ff;
+  text-align: center;
+  color: #000099;
+}
+button{
+  border: 5px solid black;
+  background-color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 40px;
+}
+#Help {
+  border-color: #2196F3;
+  color: dodgerblue
+}
+#Solution {
+  border-color: #00b33c;
+  color: #00b33c;
+}
+#Reset {
+  border-color: #e60000;
+  color: #e60000;
+}
+
+table{
+    border: 2px solid grey;
+    border-collapse: collapse;
+    margin-left: 100px;
+}
+th{
+  background-color: #ffb3b3;
+  border: 2px solid grey;
+  border-collapse: collapse;
+}
+td{
+  background-color : white;
+  border: 2px solid grey;
+  border-collapse: collapse;
+  cursor: pointer;
+}
+.col{
+  line-height: 40px;
+  width: 60px;
+}
+.row{
+  line-height: 10px;
+  width: 40px;
+}
+#timer{
+  font-family: sans-serif;
+  display:flex;
+  flex-direction: row;
+  text-align: center;
+  font-size: 40px;
+  color: #ff4d4d;
+
+}

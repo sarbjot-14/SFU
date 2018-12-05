@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="218, assignment, puzzle" >
+    <title>assignment 1</title>
+    <link rel="stylesheet" href="./ass1.css">
+
+  </head>
+  <body>
+    <!-- page content -->
+    <a href=""></a>
+    <header><h1 id="h1">Assignment 1</h1></header>
+    <button id="Help" onclick="instructionsButton()">Instructions</button>
+    <button id="Answer" onclick="answer()" >Answer</button>
+    <button id="Reset" onclick="resetButton()" >Reset</button>
+
+  <p id="instructions">Click instructions for help</p>
+
+  <table>
+    <tr>
+      <th class= "row"></td>
+      <th class= "row"><br>2</br><br>1</br><br>1</br></td>
+      <th class= "row"><br>2</br><br>1</br><br>2</br></td>
+      <th class= "row"><br>1</br><br>2</br><br>2</br><br>3</br></td>
+      <th class= "row"><br>9</br><br>1</br></td>
+      <th class= "row"><br>2</br><br>1</br><br>2</br></td>
+      <th class= "row"><br>1</br><br>4</br><br>6</br></td>
+      <th class= "row"><br>1</br><br>3</br></th>
+      <th class= "row"><br>5</br><br>1</br></td>
+      <th class= "row"><br>6</br><br>1</br></td>
+      <th class= "row"><br>2</br></td>
+      <th class= "row"><br>3</br><br>2</br></td>
+      <th class= "row"><br>2</br><br>3</br></td>
+      <th class= "row"><br>1</br><br>2</br><br>1</br><br>1</br></td>
+    </tr>
+
+  <tr>
+    <th class= "col">1  1</td>
+    <td id="first" onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+  </tr>
+  <tr>
+    <th class= "col">2  2 1 4</td>
+    <td onclick="change(event)" ></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+  </tr>
+  <tr>
+    <th class= "col">2  3 1 3</td>
+    <td onclick="change(event)" ></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+  </tr>
+  <tr>
+    <th class= "col">2  1 2 1</td>
+    <td onclick="change(event)" ></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+  </tr>
+  <tr>
+    <th class= "col">5  2</td>
+    <td onclick="change(event)" ></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+  </tr>
+  <tr>
+    <th class= "col">1  1 2 1</td>
+    <td onclick="change(event)" ></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+  </tr>
+  <tr>
+    <th class= "col">1  2 1</td>
+    <td onclick="change(event)" ></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+  </tr>
+  <tr>
+    <th class= "col">2 1  1</td>
+    <td onclick="change(event)" ></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+  </tr>
+  <tr>
+    <th class= "col">1  2 1 1 2</td>
+    <td onclick="change(event)" ></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+  </tr>
+  <tr>
+    <th class= "col">1  2 2</td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+  </tr>
+  <tr>
+    <th class= "col">2  2 3</td>
+    <td onclick="change(event)" ></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+  </tr>
+  <tr>
+    <th class= "col">9</td>
+    <td onclick="change(event)" ></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+  </tr>
+  <tr>
+    <th class= "col">1  2</td>
+    <td onclick="change(event)" ></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+    <td onclick="change(event)"></td>
+  </tr>
+</table>
+
+<section>
+  <h1 id= "title"> You can also time yourself</h1>
+  <header id="timer"><h1 id= "mins">00</h1><h1>:</h1><h1 id= "secs">00</h1></header>
+  <button id="STOP" onclick="stop()" >STOP</button>
+  <button id="START" onclick="start()">START</button>
+  <button id="RESET" onclick="reset()" >RESET</button>
+</section>
+
+<script src="./ass1.js" async></script>
+</body>
+
+</html>

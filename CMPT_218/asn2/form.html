@@ -1,0 +1,68 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="forms, users" >
+    <title>assignment 2</title>
+    <link rel="stylesheet" href="./ass2.css">
+    <script src="./assn2.js" async></script>
+  </head>
+  <body>
+    <!-- page content -->
+    <h1 id="h1"> My FORM-Assn 2 </h1>
+    <div class= "instructions">
+      <h2>Intrunctions:</h2>
+      <ul>
+        <li> Fill out the <mark>YELLOW</mark> form and hit submit once you are done filling out the fields, you may click on add form to fill out more form at the same time.</li>
+        <li>  You can also update information, delete all current users and remove a single user </li>
+        <li>If you wish to see current users in a table format then enter this url localhost:8080/users.html.</li>
+      </ul>
+    </div>
+    <hr>
+    <h2>Update Only</h2>
+    <form class="addons" id="update" name="simpleform" method="POST" action="update">
+      <h3>Enter first name of user you wish to update information on. Blank feilds will not change user information</h3>
+       <label for="fname">Select User:</label> <input id="fname" placeholder="first name" name="fname" type="text"> <br><br>
+       <hr>
+       <label for="lname">Last Name:</label> <input name="lname" placeholder="last" type="text"> <br><br>
+       <label for="age">Age:</label> <input name="age" placeholder="0" type="number" step="1"> <br><br>
+       <label for="email">Email:</label><input id= "email" type="email" name="email"> <br><br>
+       <label for="bd">Birthday:</label><input id="bd" type="month" name="bdaymonth"> <br><br>
+       <label for="happy">Fitness Level (Least Fit to Very Fit):</label><input id="happy" type="range" name="points" min="0" max="10"> <br><br>
+      <input type="submit" placeholder="update">
+      <input type="reset">
+
+    </form>
+    <form class="addons" action = "deleteAll" method = "POST">
+        <input type="submit" value='Delete All Users' name="Delete All Users"  />
+    </form>
+
+    <form class="addons" action = "deleteUser" method = "POST">
+        <h3>Enter first name of user you wish to remove</h3>
+
+        <label for="fname">First Name:</label> <input id="fname" placeholder="first" name="fname" type="text"> <br><br>
+        <input type="submit" value='Delete one user' name="Delete This User"  />
+    </form>
+
+    <hr>
+    <h1>Submit New Users Here</h1>
+    <button onclick="newForm()" id="add">add forum</button>
+    <button onclick="removeForm()" id="remove">remove forum</button>
+
+
+      <form class="forms" id="duplicate0" name="simpleform" method="POST" action="">
+         <label for="fname">First Name:</label> <input id="fname" placeholder="first" name="fname" type="text"> <br><br>
+         <label for="lname">Last Name:</label> <input name="lname" placeholder="last" type="text"> <br><br>
+         <label for="age">Age:</label> <input name="age" placeholder="0" type="number" step="1"> <br><br>
+         <label for="email">Email:</label><input id= "email" type="email" name="email"> <br><br>
+         <label for="bd">Birthday:</label><input id="bd" type="month" name="bdaymonth"> <br><br>
+         <label for="happy">Fitness Level (Least Fit to Very Fit):</label><input id="happy" type="range" name="points" min="0" max="10"> <br><br>
+        <input type="submit" placeholder="submit">
+        <input type="reset">
+
+      </form>
+
+    </body>
+</html>

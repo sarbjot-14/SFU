@@ -1,0 +1,39 @@
+#playertwo{
+  float:right;
+}
+#playerone{
+  float:left;
+}
+body{
+    -webkit-perspective: 1000px; /* Chrome, Safari, Opera  */
+    perspective: 1000px;
+}
+
+table {
+    -webkit-transform-style:preserve-3d;
+	text-align: center;
+	padding: 5pt 0pt;
+	border-spacing: 0pt;
+    -webkit-transform:  rotateX(60deg);
+	transform:rotateX(60deg);
+}
+
+td {
+	width: 4em;
+	height: 4em;
+	border: 2pt solid #000;
+}
+
+td:hover {
+	background: #D3E3E8;
+}
+
+td:active {
+	background: #CFF4FF;
+}
+#levelone, #leveltwo, #levelthree{
+  //background-color: blue;
+  margin:auto;
+  margin-bottom:-10;
+  margin-top:-10:
+}
