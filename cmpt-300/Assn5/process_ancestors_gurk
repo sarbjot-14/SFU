@@ -1,0 +1,80 @@
+#include "process_ancestors.h"
+//#include <linux/uaccess.h>
+#include <linux/kernel.h>
+#include <linux/slab.h>
+#include <linux/sched.h>
+#include <linux/string.h>
+#include <linux/cred.h>
+#include <linux/uidgid.h>
+
+
+#include <linux/uaccess.h>
+#include <linux/slab.h>
+
+
+asmlinkage long sys_process_ancestors(struct process_info info_array[],long size,long *num_filled);
+
+asmlinkage long sys_process_ancestors(struct process_info info_array[],long size,long *num_filled){
+	struct process_info info_array_kern[size]; 
+	struct task_struct* curr_task = current;
+	int errorCheck=1;
+	//const struct cred *cred = current_cred();
+
+	if(size <= 0){
+		printk("returning size is < 0 -EINVAL");
+		return -EINVAL;
+	}
+
+	int count = 0;
+
+	printk("INSIDE SYS_PROCESS_ANCESTORS\n");
+	printk("size var is %ld\n", size);
+	printk("The process is \"%s\" (pid %i)\n",current->comm, current->pid);
+	
+
+	//info_array[count].pid = current->pid;
+	//info_array[count]
+	int i = 0;
+
+	for(i = 0; i < size; i++){
+		errorCheck = copy_from_user(&info_array_kern[i], &info_array[i], sizeof(struct process_info) );
+		
+		if(errorCheck != 0){
+			printk("copy to temp for init failed\n");
+		return -EFAULT;
+		}
+	}	
+	
+	//info_array[0].pid = current->pid;
+	
+	while(curr_task->parent != curr_task){
+
+		curr_task = curr_task->parent;
+		count++;
+		info_array_kern[count].pid = curr_task->pid;
+		//strcpy(info_array[count].name, *(curr_task).comm);   //HOW TO COPY STRING????
+		//info_array[count].name = curr_task->comm[count];
+		info_array_kern[count].state = curr_task->state;
+		//info_array[count].uid = cred->current_uid();
+		printk("\t parent is:  \"%s\" (pid: %li) (state: %li) \n",curr_task->comm, info_array_kern[count].pid, info_array_kern[count].state);
+		
+
+		// HOW TO GET PROCESS STATE FROM CURR_TASK???
+		
+	}
+	
+
+	//while(current != lin)
+
+	for(i = 0; i < size; i++){//change to num_filled once initialsized
+	
+	errorCheck = copy_to_user(&info_array[i], &info_array_kern[i], sizeof(struct process_info));
+	if(errorCheck != 0){
+		printk("copy stats structure failed\n");
+		return -EFAULT;
+	}
+	}
+
+
+    return 0;
+}

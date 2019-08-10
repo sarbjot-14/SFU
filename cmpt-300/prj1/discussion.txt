@@ -1,0 +1,27 @@
+
+
+mystring:
+
+
+
+
+linked list:
+-comments!!!
+-what strategy are you using on insertion sort?
+-maybe give links to what your referencing
+
+
+
+sarb:
+-polish up string functions
+-help with linked list delete node function
+-add more test cases
+-lets submit sunday night
+-i'm going to work on other things now (raptors lol). look over things
+strings and list and let me know if anything obvious is missing.
+we'll also talk about sort if you have trouble with it
+
+gurkanwar:
+-review string functions and add more test cases
+-do sort
+-double check testing and functions in general
