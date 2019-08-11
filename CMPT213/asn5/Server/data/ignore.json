@@ -1,0 +1,23 @@
+{
+	"team":[
+		{
+			"name":"Toki0",
+			"id":"0",
+			"ability":"electric",
+			"color":"blue",
+			"strength":"5",
+			"weight":"20.0",
+			"height":"50.0","health":"8"
+		}
+	,{
+			"name":"Toki1",
+			"id":"1",
+			"ability":"electric",
+			"color":"blue",
+			"strength":"5",
+			"weight":"20.0",
+			"height":"50.0","health":"5"
+		}
+
+	]
+}

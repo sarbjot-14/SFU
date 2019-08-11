@@ -1,0 +1,49 @@
+{
+	"team":[
+	{
+		"name":"fishy",
+		"id":"0",
+		"ability":"water",
+		"color":"red",
+		"strength":"5",
+		"weight":"20.0",
+		"height":"45.0","health":"10"		
+		}
+	,{
+		"name":"big air",
+		"id":"2",
+		"ability":"fly",
+		"color":"yellow",
+		"strength":"9",
+		"weight":"20.0",
+		"height":"45.0","health":"10"		
+		}
+	,{
+		"name":"hot stuff",
+		"id":"3",
+		"ability":"fire",
+		"color":"orange",
+		"strength":"5",
+		"weight":"20.0",
+		"height":"45.0","health":"10"		
+		}
+	,{
+		"name":"shocker",
+		"id":"5",
+		"ability":"electric",
+		"color":"purple",
+		"strength":"7",
+		"weight":"20.0",
+		"height":"45.0","health":"10"		
+		}
+	,{
+		"name":"ice cube",
+		"id":"6",
+		"ability":"freeze",
+		"color":"blue",
+		"strength":"7",
+		"weight":"20.0",
+		"height":"45.0","health":"10"		
+		}
+	]
+}
