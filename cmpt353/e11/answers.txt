@@ -1,0 +1,18 @@
+1. In your reddit_relative.py, what intermediate results did you .cache()?
+Briefly describe what would have happened if you hadn't used .cache() anywhere.
+(No need to time it, unless you really want to.)
+
+  I cached the data that is first read into the program (comments dataframe) because it is used to groupby
+  to get averages and it is used to join.
+
+  I also cached relative dataframe because it is used to find max relative scores and also used
+  to join in the step to match authors with the relative max scores.
+
+2. How did marking DataFrames for broadcast affect the running time of the
+“best author” program above?
+
+  with broadcast: 42.2 seconds
+
+  without broacast: 50 seconds
+
+  Performed 16% faster with broadcast.

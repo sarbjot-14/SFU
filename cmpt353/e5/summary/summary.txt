@@ -1,0 +1,140 @@
+0
+means
+x     8.717696
+y    12.522874
+dtype: float64
+
+
+standard deviations
+	 x:
+12.09458693659896
+	 y:
+6.606680770370137
+
+
+max and min
+	max for x
+35.23705548785129
+	min for x
+-22.635877790008944
+	max for y
+27.38415261152477
+	min for y
+-2.5650878326932127
+
+
+correlation coefficient
+0.9503256954375482
+next
+1
+means
+x   -0.710787
+y   -0.748987
+dtype: float64
+
+
+standard deviations
+	 x:
+11.424031427941332
+	 y:
+6.226549791205469
+
+
+max and min
+	max for x
+27.6470003722073
+	min for x
+-33.2711130771198
+	max for y
+14.147314992317481
+	min for y
+-18.621803760419066
+
+
+correlation coefficient
+0.9551531665750372
+next
+2
+means
+x    0.968907
+y    8.508535
+dtype: float64
+
+
+standard deviations
+	 x:
+2.2318288211623574
+	 y:
+1.1473837107336815
+
+
+max and min
+	max for x
+4.51888491755363
+	min for x
+-2.4490643296742807
+	max for y
+10.551871022804317
+	min for y
+6.641734490391762
+
+
+correlation coefficient
+0.9819372646760663
+next
+3
+means
+x    49.905086
+y    18.553837
+dtype: float64
+
+
+standard deviations
+	 x:
+28.38755430203193
+	 y:
+16.4756375419362
+
+
+max and min
+	max for x
+87.3767
+	min for x
+0.0
+	max for y
+44.56504
+	min for y
+0.0
+
+
+correlation coefficient
+-0.08119306735490815
+next
+4
+means
+x    49.909994
+y    18.555525
+dtype: float64
+
+
+standard deviations
+	 x:
+28.378981284825986
+	 y:
+16.470559057583237
+
+
+max and min
+	max for x
+91.0528633396976
+	min for x
+4.337892453674525
+	max for y
+49.93419703633311
+	min for y
+0.05549750758115175
+
+
+correlation coefficient
+-0.08823598983058885
+next

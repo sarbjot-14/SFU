@@ -1,0 +1,53 @@
+
+1. In the A/B test analysis, do you feel like we're p-hacking?
+How comfortable are you coming to a conclusion at p<0.05?
+
+  The original question was: do people search more with the new design? From this we decided to test two hypothesis.
+  Did more users use the search feature? (More precisely: did a different fraction of users have search count > 0?)
+  Did users search more often? (More precisely: is the number of searches per user different?)
+
+  It can be considered p-hacking if we keep changing the question and dataset slightly
+  until we get something of significance. Here I beleive that these two questions are
+  related enought to the original question, and at this point we should accept the results
+  and conclude nothing because the p<0.05
+
+  We were also asked to test the same for instructors. At this point I beleive
+  we are stretching and trying to reach conclusions by trying design the experiment
+  to get the the conclusion we want. I think if instructors truly did use the search
+  differently and much more, only then would I be okay with this part.
+
+
+2. If we had done T-tests between each pair of sorting implementation results,
+how many tests would we run?
+  7 chose 2. 7!/(2!(7-2)!)   = 21
+
+If we looked for p< 0.05  in them, what would the probability
+be of having all conclusions correct, just by chance?
+
+  0.95^21= 0.34 ; 35% probability
+
+That's the effective p-value of the many-T-tests analysis.
+[We could have done a Bonferroni correction when
+doing multiple T-tests, which is a fancy way of saying “for m tests, look for
+significance at alpha/m”.]
+
+
+
+3. Give a ranking of the sorting implementations by speed, including which
+ones could not be distinguished. (i.e. which pairs could our experiment not
+conclude had different running times?)
+
+  Based on results from Tukey HSD test using graph (difference of confidence intervals)
+  and reject column of Multiple Comparison of Means - Turkey HSD.
+  Additionally looking at meandiff. The sorting alogrithms that could not be
+  distinguished have a very low meandiff:
+  From best to worst running time:
+
+
+
+  1. partion_sort
+  2. qs1
+  3. qs5 or qs2 (could not be distinguished)
+  4. qs2 or qs3 (could not be distinguished)
+  5. qs3 or qs4 (could not be distinguished)
+  6. merge1

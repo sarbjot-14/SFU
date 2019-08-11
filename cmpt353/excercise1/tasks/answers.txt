@@ -1,0 +1,23 @@
+Questions :
+
+1.Where you did the same calculations with NumPy and Pandas,
+which did you find easier to work with? Which code do you think is easier to read?
+
+For summing across rows I found Pandas easier to work with and read. With Pandas you start with your array, apply the operation, and pass the
+extra paremeter like axis. With Numpy you have to start with np which is harder to read. I find it easier to start with what your working on
+and then apply functions.
+
+For finding the index of the smallest element, Pandas was alot easier to implement and read. It requiers less code and also returns the name
+of the row rather than reset
+
+Additionally displaying that data is alot more elegant and easy to read in Pandas
+
+
+2.What were the running times of the two pivot_months_* functions? How can you explain the difference?
+
+Running time for pivot_months_pandas : 20.2 ms ± 683 µs per loop (mean ± std. dev. of 7 runs, 10 loops each)
+Running time for pivot_months_loops : 701 ms ± 28.8 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+
+pivot_months took about 30 times longer than pivot_months_pandas. The implementaions used in Pandas are very optimized.
+Implementions in Pandas are made considering every aspect which includes low level memory management. These details lead
+to a better run time.

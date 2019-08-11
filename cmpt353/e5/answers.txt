@@ -1,0 +1,69 @@
+
+1. Which of the four transforms suggested got you the closest
+to satisfying the assumptions of a T-test?
+
+  I beleive square rooting got me closest.
+  Using log weekday failed normal test as well as equal variance test
+  Using squareroot slightly failed one normal test but passed equal variance tests
+  Using squared failed both normal test by large margin and equal variance test
+
+2. I gave imprecise English translations of what the by-week
+test, and the Mann-Whitney test were actually testing.
+Do the same for the original T-test, and for the transformed
+data T-test. That is, describe what the conclusion would be
+if you could reject the null hypothesis in those tests.
+
+In the original t-test and transformed data T-test the null hypothesis would be that
+the number of comments on the weekend and weekday is the same. The alternative hypothesis
+would be that they are not the same. If we could reject the null hypothesis than
+we could conclude that the alternative hypothesis is more likely.
+
+
+3. Of the four approaches, which do you think actually
+does a better job of getting an answer for the original
+question: “are there a different number of Reddit comments
+posted on weekdays than on weekends?” Briefly explain why.
+(It's not clear to me that there is a single correct answer
+to this question.)
+
+Original data:
+  Regarding the normal tests, both p values are a lot smaller than 0.05,
+  therefore its almost certainthat the distributions are not normal
+  and t test would be invalid.
+    Original data normality p-values: 1.01e-07 0.00152
+  Furthermore, variances are likely not equal reinforcing the notion to apply t test
+    Original data equal-variance p-value: 0.0438
+Transformed data:
+
+Using normality test one dataset close to normal while other is normal
+Transformed data normality p-values: 0.0369 0.108
+Transforming with square root also seems to significantly help equalize the
+variances
+Transformed data equal-variance p-value: 0.556
+Transforming has made the t-test more reliable
+
+
+
+Central Limit Theroem:
+By the normailiy test, both are normal since p > 0.05
+Weekly data normality p-values: 0.308 0.153
+Since p > 0.05 conclude that they have equal variance
+Weekly data equal-variance p-value: 0.204
+Central Limit Theroem has passed both normality and equal variances
+tests. Allowing t test to be more reliable than transforming.
+
+U-test:
+U-test ussually last resort. Used when we can not reach normal distributions.
+In this case we were able to reach close to normal with transformations and
+central limit theorem.
+
+Conclusion: because we have enough data points. Around more than 50 and it passed
+normaility tests as well as equal variance test, settling with central limit test
+is reasononable.
+
+
+4. When are more Reddit comments posted in /r/canada, on
+average weekdays or weekends?
+
+Weekday's have more comments posted than Weekends, based on histograms and
+finding mean for comments on weekend vs weekday

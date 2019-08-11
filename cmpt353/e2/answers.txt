@@ -1,0 +1,22 @@
+1. In the hint above, what is the result of the calculation
+data['timestamp']*fit.slope + fit.intercept?
+What is the type, and describe the values.
+
+Panda series where each element is a float64.
+
+The values are the rating scores for the best fit line.
+
+2. In the same hint, why does this produce a fit line on the graph?
+
+Since we have the slope and intercept of the fit line by using linear regression
+method, we then multiply the slope with the each timestamp to get the amount it increases. Then
+adding the intercept.
+
+
+Why are the created_at values and timestamp values paired correctly to make
+points on the plot?
+
+
+Each date will line up with each rating because pandas does element wise operations,
+therefore element by element the two series match up and is able create points that
+emulate reality.

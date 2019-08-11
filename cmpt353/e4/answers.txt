@@ -1,0 +1,19 @@
+1.) Based on your results for the last question, do you think
+daily temperatures are a good way to predict population density?
+Briefly explain why or why not.
+
+If it is okay to get the prediction within 1000 people/km^2, then predicting that
+population density is within 1000-4000 people/km^2 when temperature is between 15 to 30
+degrees is okay. But, for a more accurate prediction I believe using a different
+parameter other than temperature, such as distance from major port,
+might produce a better trend to make a more accurate prediction.
+
+
+2.) The larger data file (stations.json.gz) was kept compressed on
+disk throughout the analysis. Decompressing every time we run
+the program seems inefficient. Why might this be faster than working
+with an uncompressed .json data?
+
+gzip significantly reduces repeated words and characters in a file, therefore
+creating a much smaller file. Loading a smaller file is much faster than a smaller
+one, therefore improving performance

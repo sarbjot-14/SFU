@@ -1,0 +1,15 @@
+1. Looking at your dog-rates.ipynb, do you think the residual are close-enough to
+being normal to look at the OLS p-value? Can you reasonably conclude that the
+ratings are increasing?
+
+  Residuals are not normal. The histogram is skewed left.
+  Can not conclude anything because residuals is not normal.
+
+2. Do you think that the new “better” prediction is letting the Kalman filter
+do a better job capturing the true signal in the noise?
+
+  It is hard to see a difference, but I would trust the new prediction more because
+  it has been trained on the data we are working with whereas previously we
+  made our best educated guess of what the tempertures might behave like. Using
+  the coefficent from the trained model will be able to better predict and
+  smooth data more accurately.

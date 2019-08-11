@@ -1,0 +1,52 @@
+1. Which model did the best for the colour-prediction task?
+kNN classifer
+Can you give a theory about why?
+
+I don't think Bayes classifier did well because it relies on probabilities
+derived from Bayes Theorem. There isn't much of trends or patterens to guess
+probabilities, therefore it we less successful compared to others
+
+I believe k nearest neighbors did well because colours are naturally grouped
+and concentreated then blend into different colours. Finding the nearest neighbours
+makes sense in order to find the closest color to the target.
+
+SVM works best when there is a large margin between segments. Since colour is
+continues and does not have clear cut segments SVM would not be optimal here
+
+
+
+2. Have a look at the cities in your validation data where
+the weather model makes the wrong prediction. Do you feel like
+the model is making reasonable mistakes? Can you think of any weather
+features that we could potentially add to make better predictions?
+
+I think the wrong predictions are reasonable. The cities mistakenly predicted
+are either geographically very close, or simply have very similar weather. Perhaps
+using the date of the first and last snowfall for the year would help increase
+accuracy.
+
+truth      prediction
+5           Calgary        Edmonton
+7          Montreal          Ottawa
+13          Seattle        Victoria
+17         Winnipeg          Regina
+20          Toronto          London
+23         Montreal          Ottawa
+29         Victoria       Vancouver
+34           Regina       Saskatoon
+38           Regina        Edmonton
+42        Vancouver        Victoria
+46        Saskatoon          Regina
+48         Edmonton          Regina
+50           Regina       Saskatoon
+51        Saskatoon          Regina
+53          Atlanta     New Orleans
+55         Winnipeg       Saskatoon
+62        Vancouver        Victoria
+81         Winnipeg          Regina
+84   Raleigh Durham         Atlanta
+91         Edmonton       Saskatoon
+92           Ottawa        Montreal
+93         Edmonton       Saskatoon
+95         Edmonton         Calgary
+102          Ottawa          Québec
